@@ -3,12 +3,12 @@
 
 int main(int argc, char **argv)
 {
-    auto list = Node<float>{};
+    auto list = Node<float>{};  // empty list, dummy node, value = 0.0, next = nullptr
 
     // Insert some numbers to the front of the list.
     auto last = &list;
     for (int i = 0; i < 10; ++i) {
-        last = list_insert_after(last, static_cast<float>(i));
+        last = list_insert_after(last, static_cast<float>(i));  // insert: dummy -> {0, ptr(1)} -> {1, ptr(2)} -> ... -> {9, nullptr}
         print(list_to_vector(list));
     }
 

@@ -14,7 +14,7 @@ template <typename T> class Queue
 
   public:
     // Create a queue with the specified capacity
-    Queue(size_t capacity) : _storage(capacity), _position{0}, _size{0}
+    Queue(size_t capacity) : _storage(capacity), _position{0}, _size{0}  // note capacity here is not v.capacity() but the size of the queue
     {
         assert(capacity > 0);
     }

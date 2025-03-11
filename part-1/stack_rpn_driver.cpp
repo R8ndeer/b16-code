@@ -15,7 +15,7 @@ int main(int argc, char **argv)
     std::cout << "2 2 3 + * = " << stack.top() << '\n';
 
     // Advanced interface (optional)
-    stack << 2 << 2 << 3 << plus << multiplies;
+    stack << 2 << 2 << 3 << plus<int> << multiplies<int>;
     std::cout << "2 2 3 + * = " << stack.top() << '\n';
 
     return 0;
