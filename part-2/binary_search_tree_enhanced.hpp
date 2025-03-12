@@ -4,7 +4,7 @@
 #include "binary_search_tree.hpp"
 
 template <typename T>
-T bst_min(const T& tree)  // T: reference to a pointer "tree"
+T bst_min(const T& tree)  // T&: reference to a pointer "tree"
 {
     // WRITE YOUR CODE HERE
     if (!left(tree))
